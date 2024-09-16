@@ -1,0 +1,36 @@
+h1 {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px;
+}
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+}
+.search-bar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 32px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+.search-bar::before {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.search-bar span {
+    color: #999;
+    font-size: 16px;
+}
