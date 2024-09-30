@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook Book</title>
+    <style>
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/001/959/920/non_2x/blurred-busy-restaurant-background-free-photo.JPG');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        .container {
+            max-width: 1000px;
+            height: auto;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.63);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 32px;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(203, 247, 232);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 400%;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: 100;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 24px;
+            display: block;
+            margin: 20px 0;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination a {
+            margin: 0 5;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .pagination a:disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
+        .recipe {
+            display: none;
+        }
+        .recipe:target {
+            display: block;
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+            margin-right: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 790px;
+            font-size: 105%;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://webstockreview.net/images/clipart-restaurant-restaurant-logo-13.png" alt="Logo" class="logo">
+        <h1>CookBook</h1>
+    </header>
+
+    <div class="container">
+        <div id="recipe1" class="recipe">
+            <img src="https://i.ytimg.com/vi/PQOt7UgqxKI/maxresdefault.jpg" alt="Garlic Butter Shrimp">
+            <h2>Garlic Butter Shrimp</h2>
+            <p>Garlic Butter Shrimp is a super easy dish to make...</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>2 lbs shrimp cleaned</li>
+                <li>2 tablespoons parsley chopped</li>
+                <li>1/4 cup butter</li>
+                <li>1 head garlic crushed</li>
+                <li>1 cup lemon lime soda</li>
+                <li>1 teaspoon lemon juice</li>
+                <li>salt and pepper to taste</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Marinate the shrimp in lemon soda for about 10 minutes.</li>
+                <li>Melt the butter in a pan.</li>
+                <li>Add the garlic. Cook on low heat until light brown.</li>
+                <li>Put in the shrimp. Stir-fry until shrimp turns orange.</li>
+                <li>Season with black pepper, salt, and lemon juice.</li>
+                <li>Add parsley. Cook for 30 seconds.</li>
+                <li>Serve hot. Enjoy!</li>
+            </ol>
+        </div>
+
+        <div id="recipe2" class="recipe">
+            <img src="https://www.madewithlau.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F2r0kdewr%2Fproduction%2F2c90f6410d47972d8555dd5ddcbcc47346957d43-1000x668.jpg&w=3840&q=75" alt="Fried Rice">
+            <h2>Fried Rice</h2>
+            <p>All of us have our own concept of fried rice...</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>4 cups leftover steamed white rice</li>
+                <li>4 ounces ham minced</li>
+                <li>2 eggs beaten</li>
+                <li>1/4 teaspoon salt</li>
+                <li>1/2 teaspoon garlic powder</li>
+                <li>3 tablespoons cooking oil</li>
+                <li>1 cup frozen green peas</li>
+                <li>1/2 cup chopped green onions</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Gently mash the leftover rice.</li>
+                <li>Add salt and garlic powder and toss. Set aside.</li>
+                <li>Heat oil in a frying pan.</li>
+                <li>Sauté the minced ham for 1 minute.</li>
+                <li>Cook the beaten eggs.</li>
+                <li>Add the rice and toss for 5 minutes.</li>
+                <li>Serve and enjoy!</li>
+            </ol>
+        </div>
+
+
+        <div id="recipe3" class="recipe">
+            <img src="https://journal.com.ph/wp-content/uploads/2021/05/Pancit-Bihon-1200x800.jpg" alt="Pancit Bihon">
+            <h2>Pancit Bihon</h2>
+            <p>Check out this quick and easy pancit bihon (guisado) recipe—perfect for a quick meal!</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 lb pancit bihon rice noodles</li>
+                <li>1/2 lb pork cut into small thin slices</li>
+                <li>1/2 lb chicken cooked, deboned, and cut into thin slices</li>
+                <li>1/8 lb snow peas</li>
+                <li>1 cup carrots</li>
+                <li>1/2 small cabbage chopped</li>
+                <li>1 cup celery leaves chopped finely</li>
+                <li>1 onion chopped</li>
+                <li>1/2 tbsp garlic minced</li>
+                <li>2 teaspoons chicken powder</li>
+                <li>5 tbsp soy sauce</li>
+                <li>3 to 4 cups water</li>
+                <li>3 tbsp cooking oil</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Heat the oil in a large wok. Sauté garlic and onion.</li>
+                <li>Add the pork and chicken, then let cook for 2 minutes.</li>
+                <li>Add the chicken powder and water, then simmer for 15 minutes.</li>
+                <li>Put in the carrots, snow peas, cabbage, and celery leaves and simmer for a few minutes.</li>
+                <li>Remove all the ingredients in the pot except for the liquid and set them aside.</li>
+                <li>In the pot with the liquid, add the soy sauce and mix well.</li>
+                <li>Add the pancit bihon (make sure to soak it in water for about 10 minutes) and mix well. Cook until liquid evaporates completely.</li>
+                <li>Put in the vegetables and meat that were previously cooked and simmer for a minute or two.</li>
+                <li>Serve hot. Share and enjoy!</li>
+            </ol>
+        </div>
+
+
+        <div id="recipe4" class="recipe">
+            <img src="https://jocyls.com/wp-content/uploads/2023/05/lumpia-recipe.jpg" alt="Lumpia">
+            <h2>Lumpia</h2>
+            <p>This is a basic lumpia recipe, or Filipino egg roll (also known as Lumpiang Shanghai).</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>50 pieces lumpia wrapper</li>
+                <li>3 cups cooking oil</li>
+                <li>1 1/2 lbs ground pork</li>
+                <li>2 pieces onion minced</li>
+                <li>2 pieces carrots minced</li>
+                <li>1 1/2 teaspoons garlic powder</li>
+                <li>1/2 teaspoon ground black pepper</li>
+                <li>1/2 cup parsley chopped</li>
+                <li>1 1/2 teaspoons salt</li>
+                <li>1 tablespoon sesame oil</li>
+                <li>2 eggs</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>In a bowl, combine the ground pork, carrots, onions, garlic powder, black pepper, salt, and sesame oil. Mix well.</li>
+                <li>Wrap the mixture in the lumpia wrapper. Seal the edges with beaten egg.</li>
+                <li>In a deep pan, heat the cooking oil over medium heat.</li>
+                <li>Fry the lumpia until golden brown.</li>
+                <li>Drain on paper towels and serve hot.</li>
+            </ol>
+        </div>
+        <div id="recipe5" class="recipe">
+            <img src="https://images.deliveryhero.io/image/foodpanda/recipes/chicken-afritada-recipe-1.png" alt="Chicken Alfritada">
+            <h2>Chicken Afritada</h2>
+            <p>Chicken Afritada (or afritadang manok) is a popular Filipino dish known for its rich tomato-based sauce and tender chicken, combined with vegetables like potatoes, carrots, and bell peppers.</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 whole chicken cut into serving pieces</li>
+                <li>4 ounces chicken liver</li>
+                <li>3 hotdogs sliced diagonally</li>
+                <li>2 potatoes quartered</li>
+                <li>2 carrots diced</li>
+                <li>2 bell peppers sliced</li>
+                <li>1 yellow onion chopped</li>
+                <li>5 dried bay leaves</li>
+                <li>¾ cups green peas</li>
+                <li>5 cloves garlic chopped</li>
+                <li>3 tablespoons soy sauce</li>
+                <li>8 ounces tomato sauce</li>
+                <li>1 piece Maggi Magic Chicken Cube</li>
+                <li>½ cup cheddar cheese grated</li>
+                <li>fish sauce and ground black pepper to taste</li>
+                <li>½ cup cooking oil</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Heat the cooking oil in a wok. Pan-fry the potatoes and carrots until they brown a bit (about 3 to 4 minutes). Set aside.
+                    2 potatoes, ½ cup cooking oil, 2 carrots</li>
+                <li>Reduce the oil to 3 tablespoons. Pan-fry the chicken livers for 30 seconds on each side. Remove the liver and set aside.
+                    4 ounces chicken liver</li>
+                <li>Sauté the onion and garlic until the onion softens. Add the chicken pieces and continue sautéing until the outer part turns light brown.
+                    1 yellow onion, 5 cloves garlic, 1 whole chicken</li>
+                <li>Pour the soy sauce into the wok and cook for 30 seconds. Add the hotdogs and cook for 1 minute.
+                    3 tablespoons soy sauce, 3 hotdogs</li>
+                <li>Pour the tomato sauce into the wok, add 1 cup of water, stir, and bring it to a boil.
+                    8 ounces tomato sauce</li>
+                <li>Add the chicken liver and dried bay leaves. Simmer for 30 minutes.
+                    5 dried bay leaves</li>
+                <li>Add the green peas and bell peppers, and cook for 2 minutes. Then, add the fried potatoes and carrots and stir.
+                    ¾ cups green peas, 2 bell peppers</li>
+                <li>Season with the Maggi Magic Chicken Cube, stirring and cooking for 1 minute. Adjust seasoning with fish sauce and ground black pepper to taste. Top with grated cheese.
+                    1 piece Maggi Magic Chicken Cube, fish sauce and ground black pepper to taste., ½ cup cheddar cheese</li>
+                <li>Transfer to a serving plate. Serve and enjoy!</li>
+            </ol>
+        </div>
+        
+        <div id="recipe6" class="recipe">
+            <img src="https://mamasitas.com/wp-content/uploads/2020/05/PRITONG-TILAPIA-TPG-200520v1-1200x715.jpg" alt="Fried Tilapia">
+            <h2>Fried Tilapia</h2>
+            <p>Fried Tilapia or any kind of fried fish is easy to cook. I’m sure that we all have our own ways of frying fish. I am sharing this recipe post just so you know how I do it. There is nothing special in my method. In fact, most of you might be doing the same.</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>2 pieces tilapia cleaned and scales removed</li>
+                <li>2 teaspoons salt</li>
+                <li>1 cup cooking oil</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Rub salt all over the fish including the insides</li>
+                <li>Heat oil in a wide frying pan</li>
+                <li>When the oil is hot, put-in the tilapia. Cover the frying pan, but make sure to open it a little so that steam can come out. Fry each side in medium heat for about 6 to 10 minutes. Note: I usually wait until I don’t hear any sound. This means that the liquid is gone and the fish is crisp.</li>
+                <li>Remove from the pan and arrange in a serving plate.</li>
+                <li>Serve with your favorite condiments and side dish.</li>
+                <li>Share and enjoy!</li>
+            </ol>
+        </div>
+        
+        <div id="recipe7" class="recipe">
+            <img src="https://i.ytimg.com/vi/7t2oVRJc76M/maxresdefault.jpg" alt="Pork Monggo with Crispy Galunggong">
+            <h2>Pork Monggo with Crispy Galunggong</h2>
+            <p>Growing up in a Filipino household likely means you have had your fair share of monggo dishes. What is it about monggo that has drawn Pinoy families towards it? One of its charms would definitely be how much nutrition it can provide. It has plenty of vitamins and minerals, including fiber that could greatly aid!</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 ½ cups mung beans</li>
+                <li>1 Knorr Pork Cube</li>
+                <li>4 ounces pork cut into small pieces</li>
+                <li>1 bunch hot pepper leaves</li>
+                <li>4 cloves garlic chopped</li>
+                <li>1 onion chopped</li>
+                <li>2 tomatoes diced</li>
+                <li>5 cups water</li>
+                <li>3 tablespoons cooking oil</li>
+                <li>Fish sauce and ground black pepper to taste</li>
+                <li>2 lbs. round scad galunggong, cleaned</li>
+                <li>3 tablespoons salt</li>
+                <li>1 cup cooking oil</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Start to tenderize the mung beans by boiling 4 cups of water in a cooking pot. Add the mung beans. Cover and cook in low heat setting until it softens</li>
+                <li>Meanwhile, prepare the fish by rubbing salt all over it, including the cavity. Heat 1 cups of cooking oil in a pan. Fry the fish until it gets crispy. Set aside.</li>
+                <li>Cook the pork monggo by heating 3 tablespoons of cooking oil that you used to fry the fish. Saute garlic, onion, and tomato.</li>
+                <li>Once the onion softens, add the pork. Cook it until it starts to brown. Pour 1 cup water. Let it boil. Cover and continue cooking for 10 minutes.</li>
+                <li>Add the softened mung beans and more water as needed. Stir and cook for 5 minutes.</li>
+                <li>Add hot pepper leaves and season with fish sauce and ground black pepper.</li>
+                <li>Transfer to a serving bowl. Serve with warm rice and fried galunggong. Share and enjoy!</li>
+            </ol>
+        </div>
+        
+        <div id="recipe8" class="recipe">
+            <img src="https://3.bp.blogspot.com/-yxE2MhEg73k/W7ltSVnMkQI/AAAAAAAANEQ/-icvwFxpl_c6-ax_nKHXEcMecOqXz18mwCLcBGAs/s1600/P1330912a.JPG" alt="Bulalo">
+            <h2>Bulalo</h2>
+            <p>It’s a well known fact that Filipinos love stew and soup dishes. From the sour sinigang to the sweet tinola, there’s guaranteed to be a soup dish for every flavor palate preference –– all great to sip and enjoy, especially during long, cool nights. But one of the most popular, and arguably most delicious.</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>2 lbs beef shank</li>
+                <li>½ cabbage whole leaf individually detached</li>
+                <li>1 bundle bok choy</li>
+                <li>2 cobs corn each cut into 3 parts</li>
+                <li>2 Tablespoons whole peppercorn</li>
+                <li>1/2 cup green onions cut unto 1 1/2 inch pieces</li>
+                <li>1 onion</li>
+                <li>34 ounces water</li>
+                <li>fish sauce to taste optional</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>In a big cooking pot, pour in water and bring to a boil</li>
+                <li>Put-in the beef shank followed by the onion and whole pepper corn then simmer for 1.5 hours (30 mins if using a pressure cooker) or until meat is tender.</li>
+                <li> the corn and simmer for another 10 minutes</li>
+                <li>Add the fish sauce,cabbage, pechay, and green onion (onion leeks)</li>
+                <li>Serve hot. Share and Enjoy!</li>
+            </ol>
+        </div>
+        
+        <div id="recipe9" class="recipe">
+            <img src="https://lakegenevacountrymeats.com/wp-content/uploads/Fried-Chicken-Pieces.jpg" alt="Crispy Fried Chicken">
+            <h2>Crispy Fried Chicken</h2>
+            <p>What is comfort food to you? If you’re like me, one of the image that comes to mind is a gorgeously crispy fried chicken. Simple but flavorful, fried chicken is a treat for both kids and adults alike.</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>3 lbs. chicken cut into individual pieces</li>
+                <li>1 tablespoon salt</li>
+                <li>3 cups cooking oil</li>
+                <li>1 cup all-purpose flour</li>
+                <li>¾ cup evaporated milk</li>
+                <li>1 Knorr Chicken Cube</li>
+                <li>2 eggs</li>
+                <li>¾ cups all-purpose flour</li>
+                <li>1 teaspoon baking powder</li>
+                <li>2 teaspoons garlic powder</li>
+                <li>½ teaspoon salt</li>
+                <li>¼ teaspoon ground black pepper</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Rub salt all over the chicken. Let it stay for 15 minutes.li>
+                <li>Heat the oil in a cooking pot.</li>
+                <li>Prepare the batter. Start by pressing a fork on the chicken cube until it is completely squashed. Combine it with warm milk. Stir until well blended. Set aside.</li>
+                <li>Combine flour, baking powder, garlic powder, salt, and ground black pepper. Mix well using a fork or a wire whisk. Set aside.</li>
+                <li>Beat the eggs in a large mixing bowl. Add the milk mixture. Continue to beat until all the ingredients are all incorporated. Add half of flour mixture. Whisk. Add the remaining half and whisk until the texture of the batter becomes smooth.</li>
+                <li>Dredge the chicken in flour and then dip in batter. Roll it again in flour until completely covered. Fry in medium heat for 7 minutes per side.</li>
+                <li>Remove from the pot and put in a plate lined with paper towel. This will absorb the oil.</li>
+                <li>Serve with ketchup or gravy.</li>
+                <li>Share and enjoy!</li>
+            </ol>
+        </div>
+        
+        <div id="recipe10" class="recipe">
+            <img src="https://i0.wp.com/outoftownblog.com/wp-content/uploads/2020/08/Classic-Filipino-Pork-Adobo-Recipe-photo-via-Depositphotos.jpg?w=1200&ssl=1" alt=alt="Pork Adobo">
+            <h2>Pork Adobo</h2>
+            <p>This is a recipe post for Filipino Pork Adobo. It is a dish composed of pork slices cooked in soy sauce, vinegar, and garlic. There are version wherein onions are also added.</p>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>2 lbs pork belly</li>
+                <li>2 tablespoons garlic</li>
+                <li>5 dried bay leaves</li>
+                <li>4 tablespoons vinegar</li>
+                <li>1/2 cup soy sauce</li>
+                <li>1 tablespoon peppercorn</li>
+                <li>2 cups water</li>
+                <li>Salt to taste</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Combine the pork belly, soy sauce, and garlic then marinade for at least 1 hour
+                    2 lbs pork belly, 1/2 cup soy sauce, 2 tablespoons garlic</li>
+                <li>Heat the pot and put-in the marinated pork belly then cook for a few minutes</li>
+                <li>Pour remaining marinade including garlic.</li>
+                <li>Add water, whole pepper corn, and dried bay leaves then bring to a boil. Simmer for 40 minutes to 1 hour
+                    1 tablespoon peppercorn, 2 cups water, 5 dried bay leaves</li>
+                <li>Put-in the vinegar and simmer for 12 to 15 minutes
+                    4 tablespoons vinegar</li>
+                <li>Add salt to taste
+                    Salt to taste</li>
+                <li>erve hot. Share and enjoy!</li>
+            </ol>
+        </div>
+        
+        <div class="pagination">
+            <h4>Check our best recipes!</h4>
+            <a href="#recipe1">Recipe 1</a>
+            <a href="#recipe2">Recipe 2</a>
+            <a href="#recipe3">Recipe 3</a>
+            <a href="#recipe4">Recipe 4</a>
+            <a href="#recipe5">Recipe 5</a>
+            <a href="#recipe6">Recipe 6</a>
+            <a href="#recipe7">Recipe 7</a>
+            <a href="#recipe8">Recipe 8</a>
+            <a href="#recipe9">Recipe 9</a>
+            <a href="#recipe10">Recipe 10</a>
+
+        </div>
+    </div>
+</body>
+</html>
